@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+
+    /* 土曜日の列（7番目のtdとth）を青系にする */
+      .calendar th:last-child {
+          color: #2563eb; /* 文字を濃い青に */
+          background-color: #eff6ff; /* ヘッダーの背景を薄い青に */
+      }
+
+      .calendar td:last-child {
+          background-color: #f0f7ff; /* 日付エリアの背景をさらに薄い青に */
+      }
+
+      /* 土曜日の日付の数字を青色にする */
+      .calendar td:last-child .date-number {
+          color: #2563eb;
+      }
+
+      /* 他の月の土曜日は少し薄くする（お好みで） */
+      .calendar td:last-child.other-month {
+          background-color: #fbfcfe;
+          color: #94a3b8;
+      }
     .calendar {
       width: 100%;
       border-collapse: collapse;
